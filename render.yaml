@@ -1,0 +1,12 @@
+# Exported from Render on 2025-06-10T04:43:48Z
+services:
+  - type: web
+    name: Ai-video-generatot2-3
+    runtime: node
+    repo: https://github.com/skyboss878/Ai-video-generatot2
+    plan: free
+    region: oregon
+    buildCommand: npm install && npm run build
+    startCommand: serve -s dist
+    autoDeployTrigger: commit
+version: "1"
