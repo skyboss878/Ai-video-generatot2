@@ -1,7 +1,4 @@
-# (Paste the fixed JSON above, save with CTRL + O, ENTER, and exit with CTRL + X)
-
-# Reinstall everything
-npm install{
+{
   "name": "ai-video-generator",
   "version": "1.0.0",
   "description": "AI-powered video generation platform",
