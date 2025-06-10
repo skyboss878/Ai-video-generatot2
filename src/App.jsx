@@ -54,9 +54,30 @@ function App() {
       </button>
 
       {videoUrl && (
-        <div className="mt-6">
-          <h2 className="text-xl font-semibold mb-2">Your Generated Video</h2>
-          <video src={videoUrl} controls className="w-full max-w-xl rounded" />
+        <div className="mt-6 w-full max-w-lg">
+          <h2 className="text-xl font-semibold mb-4">Generated Video:</h2>
+          <video
+            className="w-full rounded"
+            controls
+            src={videoUrl}
+          >
+            Your browser does not support the video tag.
+          </video>
+          <div className="mt-4 flex gap-2">
+            <a
+              href={videoUrl}
+              download
+              className="px-4 py-2 bg-green-600 rounded hover:bg-green-700"
+            >
+              Download Video
+            </a>
+            <button
+              onClick={() => setVideoUrl('')}
+              className="px-4 py-2 bg-red-600 rounded hover:bg-red-700"
+            >
+              Clear
+            </button>
+          </div>
         </div>
       )}
     </div>
