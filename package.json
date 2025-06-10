@@ -2,7 +2,7 @@
   "name": "ai-video-generator",
   "version": "1.0.0",
   "description": "AI-powered video generation platform",
-  "main": "index.js",
+"main": "src/server/index.js"
   "scripts": {
     "dev": "vite",
     "build": "vite build",
